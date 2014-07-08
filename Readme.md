@@ -1,3 +1,1 @@
-## Yo, I'm a Readme
-
-You should probably update me so people looking at your code have an idea what it is being used for :)
+This assignment from the Iron Yard (Monday, Week 6) allowed us the chance to try out Javascript testing using Mocha and Chai. 
