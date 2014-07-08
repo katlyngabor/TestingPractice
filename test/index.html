@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mocha Spec Runner</title>
+    <link rel="stylesheet" href="bower_components/mocha/mocha.css">
+</head>
+<body>
+    <div id="mocha"></div>
+    <script src="bower_components/mocha/mocha.js"></script>
+    <script>mocha.setup('bdd')</script>
+    <script src="bower_components/chai/chai.js"></script>
+    <script>
+        var assert = chai.assert;
+        var expect = chai.expect;
+        var should = chai.should();\
+// _.last
+// _.first
+// _.random
+
+
+(function () {
+  'use strict';
+  describe('_pluck', function () {
+    it('should return an array', function () {
+      var plucking = _.pluck([ {type: 'kittens', desc: 'cute'}, {type: 'puppies', desc: 'precious'}], function(pets){ return pets.type});
+      (plucking).should.equal(['kittens','puppies'].and.be.an('array');
+    });
+  });
+ 
+
+(function () {
+  'use strict';
+  describe('_last', function () {
+    it('should be a number', function () {
+      var lasting = _.last([1, 2, 3, 4]);
+      (lasting).should.equal(4).and.be.a('number');
+    });
+  });
+
+
+(function () {
+  'use strict';
+  describe('_first', function () {
+    it('should be a number', function () {
+      var firsting = _.first([1, 2, 3, 4]);
+      (firsting).should.equal(1).and.be.a('number');
+    });
+  });
+
+
+(function () {
+  'use strict';
+  describe('_random', function () {
+    it('should be a number', function () {
+      var randoming = _.random([1, 2, 3, 4]);
+      expect(randoming).to.be.a('number');
+    });
+  });
+
+
+
+  describe('Kid', function () {
+    it('should take a description of a string', function () {
+      var Madelyn = new Kid({ description: 'cranky'});
+      (Madelyn.description).should.equal('cranky').and.be.a('string');
+    });
+ 
+    it('should be sleepy after she plays', function () {
+      var Penelope = new Kid();
+      Penelope.play();
+      expect(Penelope.energy).to.equal('sleepy');
+    });
+ 
+    it('should be annoying no matter what', function () {
+      var other_kids = new Kid({ annoying: true });
+      expect(other_kids.annoying).to.equal(true);
+    });
+ 
+  });
+ 
+})();
+
+    
+
+
+    </script>
+
+    <!-- include source files here... -->
+
+    <script src= "../app/scripts/main.js"></script>
+
+    <!-- include spec files here... -->
+    <script src="spec/test.js"></script>
+
+    <script>mocha.run()</script>
+</body>
+</html>
