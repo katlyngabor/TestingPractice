@@ -8,7 +8,7 @@
   'use strict';
   describe('_pluck', function () {
     it('should return an array', function () {
-      var plucking = _.pluck([ {type: 'kittens', desc: 'cute'}, {type: 'puppies', desc: 'precious'}], function(pets){ return pets.type});
+      var plucking = _.pluck([ {type: 'kittens', desc: 'cute'}, {type: 'puppies', desc: 'precious'}], function(pets){ return pets.type} ]);
       (plucking).should.equal(['kittens','puppies'].and.be.an('array');
     });
   });
