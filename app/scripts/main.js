@@ -8,7 +8,6 @@ var lasting = _.last([1, 2, 3, 4]);
 var firsting = _.first([1, 2, 3, 4]);
 
 
-
 var randoming = _.random([1, 2, 3, 4]);
 	
 
